@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style(Eduford-Site).css">
+  <title>Eduford-Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- bootstratp icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+<!-- hero section editing start -->
+
+<section class="hero_section">
+
+<!-- Navbar edit -->
+
+<nav>
+  <a href="Index(Eduford-Site).html"><img src="eduford_img/logo.png" alt="the site logo"></a>
+  <div class="nav-items" id="navitems">
+    
+    <i class="bi bi-x" onclick="hideMenu"></i>
+
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">COURSE</a></li>
+      <li><a href="">BLOG</a></li>
+      <li><a href="">CONTACT</a></li>
+    </ul>
+  </div>
+  <i class="bi bi-list" onclick="showMenu"></i>
+
+</nav>
+
+<div class="hero-texts">
+  <h1>World Biggest University</h1>
+  <p>Making website is now one of the easiest thing in the world. You just need ot learn HTML, CSS, <br>Javascript and you are good to go.</p>
+  <a href="">Visit Us to know More</a>
+</div>
+<!-- Navbar end -->
+
+</section>
+
+<script>
+  
+  
+  var navitems = document.getElementById("navitems");
+  
+  function showMenu(){
+    navitems.style.right = "0";
+  }
+  function hideMenu(){
+    navitems.style.right = "-200px";
+  }
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
