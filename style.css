@@ -140,7 +140,7 @@ nav .bi {
 
 .campus {
   width: 80%;
-  padding-top: 100px;
+  padding-top: 50px;
   margin: auto;
   text-align: center;
 }
@@ -153,8 +153,61 @@ nav .bi {
   font-weight: 300;
   color: #777;
   line-height: 22px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
+.campus-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.imgbox {
+  flex-basis: 32%;
+  position: relative;
+  overflow: hidden;
+  
+}
+.imgbox img{
+  width:100%;
+  height: 80%;
+  border-radius: 10px;
+  
+}
+.layer {
+  background: transparent;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top:0%;
+  left: 0%;
+  border-radius: 10px;
+  transition: .7s ease;
+}
+.layer h3 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+  transition: .5s ease;
+  opacity: 0;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+|}
+.layer:hover {
+  background: rgba(226, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
 
 /* Media Query Section for all kind of elements Start */
 
@@ -171,6 +224,9 @@ nav .bi {
   .course-boxes {
     padding: 3% 5% 0% 5%;
  }
+ .layer h3 {
+  font-size: 20px;
+}
 }
 @media (max-width: 480px) {
   .hero-texts h1{
@@ -213,6 +269,23 @@ nav .bi {
   }
   .course-boxes {
     padding: 3% 7% 3% 7%;
+  }
+  .course h1 {
+    font-size: 30px;
+  }
+  .campus h1 {
+    font-size: 30px;
+  }
+  .campus-boxes {
+    flex-direction: column;
+  }
+  .layer {
+    height: 97%;
+    width: 100%;
+    margin-top: 3px;
+  }
+  .imgbox {
+    padding: 5px 0px; 
   }
 }
 
