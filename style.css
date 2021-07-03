@@ -15,6 +15,8 @@
   width: 100%;
 }  
 
+/* Nav Menu Edit */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -120,7 +122,7 @@ nav .bi {
    box-sizing: border-box;
    border-radius: 0 30px 0 0;
    margin-bottom: 5%;
-   padding: 20px 20px;
+   padding: 3% 5% 2% 5%;
    transition: .7s ease;
 }
 .course-boxes h3 {
@@ -131,13 +133,28 @@ nav .bi {
 .course-boxes:hover {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
   cursor:pointer;
+  transform: translateY(-10px);
 }
 
+/* Campus section style */
 
-
-
-
-
+.campus {
+  width: 80%;
+  padding-top: 100px;
+  margin: auto;
+  text-align: center;
+}
+.campus h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.campus p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  line-height: 22px;
+  padding-bottom: 30px;
+}
 
 /* Media Query Section for all kind of elements Start */
 
@@ -151,7 +168,9 @@ nav .bi {
   .hero-texts h1{
     font-size: 40px;
   }
-  
+  .course-boxes {
+    padding: 3% 5% 0% 5%;
+ }
 }
 @media (max-width: 480px) {
   .hero-texts h1{
@@ -168,7 +187,7 @@ nav .bi {
     background:#f44336;
     height: 100vh;
     width: 200px;
-    right: -200px;
+    right: 0px;
     top: 0;
     text-align: left;
     z-index: 2;
@@ -189,6 +208,12 @@ nav .bi {
   
   /* design for the off-canvas menu for mobile screen End*/
 
+  .course-container {
+    flex-direction: column;
+  }
+  .course-boxes {
+    padding: 3% 7% 3% 7%;
+  }
 }
 
 /* Media Query Section for all kind of elements End */
