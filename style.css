@@ -298,10 +298,12 @@ nav .bi {
   color: #f44336;
 }
 
+/* Contact Section Style 
 
-
-
-
+.contact {
+  background-image: url(eduford_img/about.jpg);
+}
+*/
 
 
 
@@ -392,6 +394,23 @@ nav .bi {
   }
   .facility-container {
     flex-direction: column;
+  }
+  .testimonial-container {
+    flex-direction: column;
+    
+  }
+  .testimonial-review {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial-review img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    left: 0;
+    top: 0;
+    transform: translateX(95%); 
   }
 }
 
