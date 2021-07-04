@@ -155,7 +155,7 @@ nav .bi {
   line-height: 22px;
   padding-bottom: 50px;
 }
-.campus-boxes {
+.campus-container {
   display: flex;
   justify-content: space-between;
 }
@@ -201,7 +201,49 @@ nav .bi {
   background: rgba(226, 0, 0, 0.5);
 }
 
+/* Facilities Section Style */
 
+.facilities {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+}
+.facilities h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.facilities p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  line-height: 22px;
+  padding-bottom: 50px;
+}
+.facility-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.facility-box {
+  flex-basis: 32%;
+  height: 0%;
+  text-align: left;
+  
+}
+.facility-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.facility-box h4 {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+
+/* Testimonial Section Style */
 
 
 
@@ -276,7 +318,8 @@ nav .bi {
   .campus h1 {
     font-size: 30px;
   }
-  .campus-boxes {
+  .campus-container {
+    margin-bottom: 50px;
     flex-direction: column;
   }
   .layer {
@@ -286,6 +329,12 @@ nav .bi {
   }
   .imgbox {
     padding: 5px 0px; 
+  }
+  .facilities h1 {
+    font-size: 30px;
+  }
+  .facility-container {
+    flex-direction: column;
   }
 }
 
