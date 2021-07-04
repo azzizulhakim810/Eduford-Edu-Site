@@ -75,7 +75,7 @@ nav img {
   font-size: 14px;
   margin: 10px 0 40px; 
 }
-.hero-texts a {
+.hero-btn {
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -83,7 +83,7 @@ nav img {
   border: 1px solid #fff;
   padding: 10px 20px;
 }
-.hero-texts a:hover {
+.hero-btn:hover {
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
@@ -237,6 +237,7 @@ nav .bi {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 .facility-box h4 {
   font-weight: 600;
@@ -298,15 +299,65 @@ nav .bi {
   color: #f44336;
 }
 
-/* Contact Section Style 
+/* Contact Section Style */
 
 .contact {
-  background-image: url(eduford_img/about.jpg);
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(eduford_img/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 120px 0;
 }
-*/
+.contact h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
 
+/* About Section */
 
-
+.about {
+  width: 80%;
+  margin: 100px auto 20px auto;
+  text-align: center;
+  display: block;
+}
+.about h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 0;
+}
+.about p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+.about i {
+  display: inline-block;
+  color: #f44336;
+  padding: 0 10px;
+  margin: 15px 0 0px 0;
+}
+.copyright {
+  text-align: center;
+}
+.copyright p{
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  line-height: 22px;
+  padding-bottom: 25px;
+}
+.copyright i {
+  color: #f44336;
+}
 
 
 
@@ -324,10 +375,20 @@ nav .bi {
   }
   .course-boxes {
     padding: 3% 5% 0% 5%;
- }
+  }
  .layer h3 {
   font-size: 20px;
-}
+  }
+ .testimonial-review {
+  margin: 0px 5px;
+  }
+  .contact h1 {
+    font-size: 25px;
+  }
+  .about p {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
 }
 @media (max-width: 480px) {
   .hero-texts h1{
@@ -395,6 +456,9 @@ nav .bi {
   .facility-container {
     flex-direction: column;
   }
+  .testimonial h1 {
+    font-size: 30px;
+  }
   .testimonial-container {
     flex-direction: column;
     
@@ -402,6 +466,7 @@ nav .bi {
   .testimonial-review {
     flex-direction: column;
     text-align: center;
+    margin: 10px 0px;
   }
   .testimonial-review img {
     width: 30%;
@@ -411,6 +476,11 @@ nav .bi {
     left: 0;
     top: 0;
     transform: translateX(95%); 
+  }
+  .contact h1 {
+    font-size: 120%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
