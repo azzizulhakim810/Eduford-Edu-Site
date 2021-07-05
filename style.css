@@ -364,7 +364,7 @@ nav .bi {
 
 
 
-/* Media Query Section for all kind of elements Start */
+/* Media Query Section for all kinds of elements Start */
 
 @media (max-width: 1440px) {
   .hero-texts h1{
@@ -408,7 +408,7 @@ nav .bi {
     background:#f44336;
     height: 100vh;
     width: 200px;
-    right: 0px;
+    right: -200px;
     top: 0;
     text-align: left;
     z-index: 2;
