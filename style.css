@@ -373,6 +373,15 @@ nav .bi {
 
 }
 @media (max-width: 768px) {
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 2%;  
+  }
+  nav img {
+    width: 50%;
+  }
   .hero-texts h1{
     font-size: 40px;
   }
